@@ -440,9 +440,11 @@ p {
 } */
 
 .workExp {
+    position: relative;
     color: white;
     font-family: geo;
     font-size: 1.1em;
+    top: -.6em;
 }
 
 .workExp h1 {
@@ -461,7 +463,7 @@ p {
 
 .skillHead {
     position: relative;
-    top: -1.7em;
+    top: -2.35em;
 }
 
 #secondContainerBackground{
