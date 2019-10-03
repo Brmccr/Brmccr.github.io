@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/a934a6cd05.js" crossorigin="anonymous"></script>
     <style>
     
-    body{
+    /* body{
             margin: 30px;
         }
     .firstContainer{
@@ -31,9 +31,6 @@
         border: 2px solid red;
     }
 
-    /* .row2 {
-        height: 300px;
-    } */
     .col1 {
         border: 3px dotted blue;
     }
@@ -52,16 +49,6 @@
         border: 3px solid orange;
     }
 
-    /* .col-md-3 {
-        position: relative;
-        top: 1em;
-        border: 3px solid black;
-        height: 14em;
-        width: 12em;
-    } */
-
-
-
     .workExp {
         border:3px solid black;
     }
@@ -78,7 +65,7 @@
     }
     .skillIcon3 {
         border: 3px solid black;
-    }
+    } */
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -89,16 +76,16 @@
     <div class="container firstContainer">
         <div class="row startRow">
             <div class="col-md-6 col-sm-6 col1"> <!--- Can think of the 4 and 8 as percentages -->
-                Brad McCracken           <!--- With 4-8 The first one will be one third-->
+                         <!--- With 4-8 The first one will be one third-->
             </div>                      <!--- The second will be 2/3rds-->
             <div class="col-md-6 col-sm-6 col2">       <!--- 6:20-->
-                Row 1 Col 2
+                
             </div>
             <div class="sticky col-md-2 navBar justify-content-end align-self-end">
                     <nav class="navbar flex-column1">
                             <a class="nav-linkactive" href="#">
-                            <a class="nav-link1" href="#About">About</a>
-                            <a class="nav-link2" href="#projecth1">Projects</a>
+                            <a class="nav-link1" href="#navAbout">About</a>
+                            <a class="nav-link2" href="#navProjects">Projects</a>
                             <a class="nav-link3" href="#contactForm1">Contact</a>
                           </nav>
                           <a href="#particles-js"><button class="homeBtn"><i class="fa fa-home"></i></button>
@@ -131,10 +118,12 @@
     <div id="secondContainerBackground">
 
     </div>
+    <div id="navAbout"></div>
     <div class="container secondContainer">
     <div class="row aboutMe">
         <div class="col-md-10 justify-content-center col4">
             <div id="About"><h1>About Me</h1>
+                <hr>
             </div>
         </div>
         <div class="col-md-10 col5">
@@ -145,15 +134,26 @@
     <div class="container skills">
         <div class="row align-items-center justify-content-center projects">
         <div class="col-md-6 workExp">
-            <h1>Previous Work Experience</h1>
-            <h2>Business Development - ZergNet</h2>
-            <p> ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem necessitatibus a esse reprehenderit recusandae eius quod, totam corrupti nobis, rem perferendis modi vel optio nulla tempora inventore? Delectus, pariatur.</p>
-            <h2>Agent Aspirant - State Farm</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nisi modi necessitatibus possimus magni itaque porro at rerum quam, incidunt maiores repudiandae quae, cumque vel reprehenderit voluptates perspiciatis? Reiciendis, explicabo.</p>
-            <a href="RESUME DOWNLOAD LINK"><h3>Download Resume</h3></a>
+            <h1>Work Experience</h1>
+            <hr>
+            <h3>Business Development - ZergNet</h3>
+            <ul>
+                <li>Developed and maintained contractual relationships with internet publishers</li>
+                <li>Primarily targeted quality websites with 1 million+ unique monthly visitors</li>
+                <li>Engaged with decision makers at the executive level</li>
+                <!-- <li>Adapted and worked with startup company in a remote environment</li> -->
+            </ul>
+            <h3>Agent Aspirant/Account Rep - State Farm</h3>
+            <ul>
+                <li>Participated in Agent Aspirant Program and learned about the process of owning an agency</li>
+                <li>Sought out new clients and developed clientele by networking and cold calling</li>
+                <li>Life, Health, Home, Auto Policy Licensed - Worked on all policy types</li>
+            </ul>
+            <a class="resume" href="https://drive.google.com/file/d/1nb_V-nbdc7fzk_Z_5Xm_JCDOXx2uVOTl/view?usp=sharing"><h4>Download Resume</h4></a>
         </div>
         <div class="col-md-6 align-items-center justify-content-center skillHead">
             <h1 class="experience">Experience With</h1>
+            <hr>
             <div class="row align-items-center justify-content-center skillIcon1">
                     <div class="col-md-3 col-sm-3 justify-content-center skill1">
                             <i class="fab fa-html5"></i>
@@ -191,16 +191,23 @@
     </div>
 </div>
 </div>
+<div id="navProjects"></div>
+<div id="thirdContainerBackground">
+
+</div>
     <div class="container thirdContainer">
         <div class="row align-items-center justify-content-center projects">
-        <div class="col-md-12 col-sm-12workExp">
+        <div class="col-md-12 col-sm-12 workExp2">
                         <div id="projecth1"><h1>Projects</h1></div>
+                        <hr>
                         <h2 class="exampleh1">Examples Of My Work</h2>
         <div class="row align-items-center justify-content-around projects">
             <div class="col-md-3 col-sm-3 project1">
                 <a class="portfolioItem" href="https://codepen.io/Brmccr/pen/ZEzMbGY" target="_blank">
                     <div class="details">
-                        <p class="hoverText">CSS Creature</p>
+                        <div class="hoverText">
+                            <h4>CSS Creature</h4>
+                        </div>
                     </div>
                 </a>
 
@@ -208,21 +215,39 @@
             <div class="col-md-3 col-sm-3 project2">
                 <a class="portfolioItem" href="https://brmccr.github.io/staticLayoutProject/" target="_blank">
                     <div class="details">
-                        <p class="hoverText">Static Webpage</p>
+                        <div class="hoverText">
+                            <h4>
+                                Netflix Static Layout
+                            </h4>
+                        </div>
                     </div>
                 </a>
                 </div>
                 <div class="col-md-3 col-sm-3 project3">
                     <a class="portfolioItem" href="https://repl.it/@Brmccr" target="_blank">
                         <div class="details">
-                            <p class="hoverText">REPL.it</p>
+                            <div class="hoverText">
+                                <h4>
+                                    REPL.it
+                                </h4>
+                            </div>
                         </div>
                         </a>
                     </div>
         </div>
+        <br>
+        <br>
         <div class="row align-items-center justify-content-around projects2">
                 <div class="col-md-3 col-sm-3 project4">
-                        API Project
+                        <a class="portfolioItem" href="https://brmccr-ghibli-api.web.app/" target="_blank">
+                            <div class="details">
+                                <div class="hoverText">
+                                    <h4>
+                                        Ghibli API Project
+                                    </h4>
+                                </div>
+                            </div>
+                            </a>
                     </div>
                     <div class="col-md-3 col-sm-3 project5">
                             Coming Soon...
@@ -245,8 +270,9 @@
             </div>
             <br>
             <br>
-            <h2 class="text-center text-uppercase">Contact Me</h2>
-            <div class="row">
+            <h2 class="text-center text-uppercase contactMe">Contact Me</h2>
+            <hr>
+            <div class="row contactForm">
                 <div class="col-12">
                     <form action="https://formspree.io/brmccr@gmail.com" method="POST">
                         <div class="control-group">
@@ -283,6 +309,9 @@
                 </div>
             </div>
         </div>
+        <footer>
+            Copyright BrMcCr 2019
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -293,5 +322,6 @@
 
 <script src="particles.js"></script>
 <script src="app.js"></script>
+<!-- <script src="colorChange.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,27 @@
+$bg-color: black;  // This can change
+$white : #fff;
+$black : #000;
+
+
+@mixin change-text-color {
+    
+@function set-text-color($color) {
+    @if (lightness( $color ) > 50) {
+      @return $black; // Lighter color, return black
+    }
+    @else {
+      @return $white; // Darker color, return white
+    }
+}
+}
+
+.nav-link1 {
+    background: $bg-color;
+    color: set-text-color($bg-color);
+}
+
+// this is here just for demo purpose
+.text {
+    padding: 10px;
+    text-align: center;
+}
