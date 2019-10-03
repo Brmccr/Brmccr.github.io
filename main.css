@@ -57,7 +57,7 @@ height: 100vh; /* Full-height: remove this if you want "auto" height */
 .homeBtn {
         display: flex;
         position: relative;
-        background-color: gray;
+        background-color: red;
         border: none;
         color: white;
         padding: 12px 16px;
@@ -677,6 +677,14 @@ hr {
 }
 
 .col5 p {
+    position: relative;
     font-family: geo;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    top: 1em;
+}
+
+.skills {
+    position: relative;
+    top: 1.3em;
+    font-family: geo;
 }
