@@ -1,7 +1,6 @@
 .firstContainer {
     height: 100vh;
     width: 100vw;
-    /* border-bottom: 30px solid black; */
     background-color: #d9d9d9
 }
 
@@ -27,18 +26,22 @@
 }
 
 .secondContainer {
-    height: 102vh;
-    width: 100vw;
+    background: black;
+    height: 104%;
+    width: 100%;
+    padding-bottom: 4em;
 }
 
 .thirdContainer {
-    height: 103vh;
-    width: 100vw;
+    height: 103%;
+    width: 100%;
+    padding-bottom: 6em;
 }
 
 .fourthContainer {
-    height: 100vh;
-    width: 100vw;
+    height: 103%;
+    width: 100%;
+    padding-bottom: 6em;
 }
 
 
@@ -163,7 +166,7 @@ height: 100vh; /* Full-height: remove this if you want "auto" height */
     position: relative;
     justify-content: center;
     text-align: center;
-    height: 17em;
+    /* height: 17em; */
 }
 
 .about1 {
@@ -420,6 +423,8 @@ p {
 }
 
 .project5 {
+    background: url("./assets/Artclient.png");
+    background-size: cover;
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -428,6 +433,8 @@ p {
 }
 
 .project6 {
+    background: url("./assets/Manga\ Review.png");
+    background-size: cover;
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -468,9 +475,9 @@ p {
 
 #secondContainerBackground{
     background: black;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 102%;
+    height: 104%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -480,7 +487,7 @@ p {
 
 #thirdContainerBackground{
     background: gray;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 103%;
     background-repeat: no-repeat;
@@ -494,7 +501,7 @@ p {
     background: black;
     position: absolute;
     width: 100%;
-    height: 102%;
+    height: 104%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -689,4 +696,8 @@ hr {
     position: relative;
     top: 1.3em;
     font-family: geo;
+}
+
+@media (min-width: 600px) {
+    p {font-size: 3rem;}
 }
