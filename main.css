@@ -26,7 +26,7 @@
 }
 
 .secondContainer {
-    background: black;
+    background: #838383;
     height: 104%;
     width: 100%;
     padding-bottom: 4em;
@@ -381,20 +381,139 @@ p {
 }
 
 .project1 {
-    background: url("./assets/CSS\ Creature.png");
+    background: url("./assets/Manga\ Review.png");
     background-size: cover;
         position: relative;
-        background-position: center center;
+        /* background-position: center center; */
         top: 1em;
         border: 3px solid black;
         height: 16em;
         width: 22em;
 }
 
+.project1:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project2:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project3:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project4:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project5:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project6:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.hoverText{
+    color: white;
+    /* background-color: black; */
+    /* font-size: large; */
+}
+
+.hoverText h4{
+text-shadow: 1px 1px 0 #000,
+-1px 1px 0 #000,
+1px -1px 0 #000,
+-1px -1px 0 #000,
+0px 1px 0 #000,
+0px -1px 0 #000,
+-1px 0px 0 #000,
+1px 0px 0 #000,
+2px 2px 0 #000,
+-2px 2px 0 #000,
+2px -2px 0 #000,
+-2px -2px 0 #000,
+0px 2px 0 #000,
+0px -2px 0 #000,
+-2px 0px 0 #000,
+2px 0px 0 #000,
+1px 2px 0 #000,
+-1px 2px 0 #000,
+1px -2px 0 #000,
+-1px -2px 0 #000,
+2px 1px 0 #000,
+-2px 1px 0 #000,
+2px -1px 0 #000,
+-2px -1px 0 #000;
+}
+
+
+
+.project1:hover .hoverText{
+    visibility:visible;
+    /* opacity: 1; */
+    /* background-color:black; */
+
+        transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project2:hover .hoverText{
+    visibility:visible;
+    /* opacity: .8; */
+    /* background-color:black; */
+    background-size: fill;
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project3:hover .hoverText{
+    visibility:visible;
+    /* opacity: .8; */
+    /* background-color:black; */
+    background-size: fill;
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project4:hover .hoverText{
+    visibility:visible;
+    /* opacity: .8; */
+    /* background-color:black; */
+    background-size: fill;
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project5:hover .hoverText{
+    visibility:visible;
+    /* opacity: .8; */
+    /* background-color:black; */
+    background-size: fill;
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
+.project6:hover .hoverText{
+    visibility:visible;
+    /* opacity: .8; */
+    /* background-color:black; */
+    background-size: fill;
+    transform: scale(1.05);
+        transition-duration: 600ms;
+}
+
 .project2 {
-    background: url("./assets/Netflix\ Static.png");
+    background: url("./assets/Artclient.png");
     background-size: cover;
-    background-position: center center;
+    /* background-position: center center; */
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -403,8 +522,9 @@ p {
 }
 
 .project3 {
-    background: url("./assets/Repl.it.png");
+    background: url("./assets/GhibliAPI.png");
     background-size: cover;
+    /* background-position: center center; */
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -413,8 +533,9 @@ p {
 }
 
 .project4 {
-    background: url("./assets/GhibliAPI.png");
+    background: url("./assets/CSS\ Creature.png");
     background-size: cover;
+    background-position: left center;
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -423,8 +544,9 @@ p {
 }
 
 .project5 {
-    background: url("./assets/Artclient.png");
+    background: url("./assets/Netflix\ Static.png");
     background-size: cover;
+    background-position: center;
     position: relative;
         top: 1em;
         border: 3px solid black;
@@ -433,7 +555,7 @@ p {
 }
 
 .project6 {
-    background: url("./assets/Manga\ Review.png");
+    background: url("./assets/Repl.it.png");
     background-size: cover;
     position: relative;
         top: 1em;
@@ -501,11 +623,11 @@ p {
     background: black;
     position: absolute;
     width: 100%;
-    height: 104%;
+    height: 110%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    opacity: .7;
+    opacity: .6;
 }
 
 
@@ -531,8 +653,13 @@ ul {
     list-style-type: circle;
 }
 .text-center button {
-    background-color: gray;
+    background-color: white;
     color: black;
+}
+
+button:hover{
+    transform: scale(1.05);
+        transition-duration: 600ms;
 }
 
 .gitHub {
@@ -607,6 +734,7 @@ ul {
 }
 
 .details .hoverText {
+    flex-direction: column;
     display: flex;
     position:relative;
     align-items: center;
@@ -614,14 +742,16 @@ ul {
     justify-content: center;
     font-size: 1.5em;
 visibility:hidden;
+text-align: center;
 }
 
-.details:hover .hoverText {
+/* .details:hover .hoverText {
+    
     visibility:visible;
     opacity: .6;
     background-color:black;
-    background-size: cover;
-    }
+    background-size: fill;
+    } */
     
 .contactForm {
     color: white;
