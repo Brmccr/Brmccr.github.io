@@ -831,3 +831,36 @@ hr {
 @media (min-width: 600px) {
     p {font-size: 3rem;}
 }
+
+@media(max-width: 766px) {
+    .workExp h4 {padding-bottom: 1em;}
+}
+
+@media(max-width: 575px){
+    .project1 {margin-bottom: 1.5em;}
+    .project2 {margin-bottom: 1.5em;}
+    .project3 {margin-bottom: .5em;}
+    .project4 {margin-bottom: 1.5em;}
+    .project5 {margin-bottom: 1.5em;}
+    .project6 {margin-bottom: 1.5em;}
+}
+
+@media(max-width: 991px){
+    .navBar{right: 1em;}
+}
+
+@media(max-width: 835px){
+    .navBar{right: 2em;}
+}
+
+@media(max-width: 800px){
+    .navBar {display: none !important;}
+}
+
+@media(max-width: 1199px) and (min-width: 768px){
+    .skillHead{top: -5em;}
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+    .skillHead{top: -7.7em;}
+}
